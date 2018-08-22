@@ -44,5 +44,8 @@
   },
   "engines": {
     "node": "6.* || 8.* || >= 10.*"
+  },
+  "dependencies": {
+    "ember-cli-sass": "^7.1.7"
   }
 }
