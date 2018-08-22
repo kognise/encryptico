@@ -1,7 +1,6 @@
-# encryptico
+# Encryptico
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+Easy-peasy encryption, decryption, and signing using a simple, beautiful web interface and top-of-the-line cryptography techniques.
 
 ## Prerequisites
 
@@ -20,13 +19,9 @@ You will need the following things properly installed on your computer.
 
 ## Running / Development
 
-* `ember serve`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
-* Visit your tests at [http://localhost:4200/tests](http://localhost:4200/tests).
-
-### Code Generators
-
-Make use of the many generators for code, try `ember help generate` for more details
+* `npm start`
+* Visit the app at [localhost:4200](http://localhost:4200).
+* Visit the tests at [localhost:4200/tests](http://localhost:4200/tests).
 
 ### Running Tests
 
@@ -45,7 +40,7 @@ Make use of the many generators for code, try `ember help generate` for more det
 
 ### Deploying
 
-Specify what it takes to deploy your app.
+We're working on an easy way to deploy it.
 
 ## Further Reading / Useful Links
 
