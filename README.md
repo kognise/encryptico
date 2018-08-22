@@ -1,6 +1,6 @@
 # Encryptico
 
-[![Build Status](https://travis-ci.org/arch-lord/encryptico.svg?branch=master)](https://travis-ci.org/arch-lord/encryptico)
+[![Build Status](https://travis-ci.org/arch-lord/encryptico.svg?branch=master)](https://travis-ci.org/arch-lord/encryptico) [![Greenkeeper badge](https://badges.greenkeeper.io/arch-lord/encryptico.svg)](https://greenkeeper.io/)
 
 Easy-peasy encryption, decryption, and signing using a simple, beautiful web interface and top-of-the-line cryptography techniques.
 
