@@ -1,0 +1,7 @@
+body {
+  background:  $primary;
+  background:  linear-gradient(90deg, $primary 0%, $secondary 100%);
+  font-family: $body-fonts;
+  color:       $font-color;
+  text-align:  center;
+}
