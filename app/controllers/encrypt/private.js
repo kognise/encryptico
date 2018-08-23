@@ -7,6 +7,7 @@ import NodeRSA from 'npm:node-rsa';
 
 export default Controller.extend({
   color:        '',
+  outputClass:  'hidden',
   loaderHidden: true,
   actions: {
     copied: function() {
@@ -17,7 +18,7 @@ export default Controller.extend({
       this.set('color', 'red');
       setTimeout(function(self) { self.set('color', '') }, 1000, this);
     },
-    go:     function() {
+    go: function() {
       var pair = keypair();
       this.set('_key', pair.public);
       this.set('key' , new htmlSafe(nl2br(pair.public)));
@@ -26,7 +27,9 @@ export default Controller.extend({
       key.importKey(pair.private, 'pkcs1');
 
       var encryptedString = key.encrypt(this.get('string'), 'base64');
-      this.set('output' , encryptedString);
+      this.set('output', encryptedString);
+
+      this.set('outputClass', '');
     }
   }
 });
