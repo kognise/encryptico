@@ -9,6 +9,8 @@ button {
   padding:          30px 100px;
   color:            $font-color;
   outline:          none;
+  cursor:           pointer;
+  @include          user-select(none);
 }
 
 button:hover {

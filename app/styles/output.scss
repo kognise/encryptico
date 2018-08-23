@@ -1,0 +1,30 @@
+.output {
+  word-wrap:     break-word;
+  max-width:     75%;
+  margin:        0 auto;
+  background:    #ffffff;
+  border-radius: 15px;
+  padding:       0 15px;
+
+  .section {
+    cursor:         pointer;
+    @include        user-select(none);
+    margin-left:   -15px;
+    margin-right:  -15px;
+    padding:        7.5px 15px 7.5px 15px;
+  }
+
+  .section:first-of-type {
+    padding-top:    15px;
+    border-radius:  15px 15px 0 0;
+  }
+
+  .section:last-of-type {
+    padding-bottom: 15px;
+    border-radius:  0 0 15px 15px;
+  }
+
+  .section:active {
+    background-color: #e6e6e6;
+  }
+}

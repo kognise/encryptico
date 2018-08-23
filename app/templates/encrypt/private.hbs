@@ -2,25 +2,18 @@
 <br/>
 <button {{action 'go'}}>Go!</button>
 
-<br/>
-Output:
-<br/>
-{{output}}
-<br/>
+<div class='output'>
+  <div class='section'>
+    <b>Output:</b>
+    <br/>
+    {{output}}
+  </div>
 
-<br/>
-Public key:
-<br/>
-{{key}}
-<br/>
-<!--
-{{#copy-button
-  clipboardText=_key
-  success=(action 'success')
-  error=(action 'error')
-}}
-  Click To Copy
-{{/copy-button}}
--->
+  <div class='section'>
+    <b>Public key:</b>
+    <br/>
+    {{key}}
+  </div>
+</div>
 
 {{spinning-loader hidden=loaderHidden}}
