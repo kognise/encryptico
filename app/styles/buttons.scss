@@ -2,7 +2,7 @@ button {
   transition:       background 0.5s;
   background:       none;
   border:           none;
-  border-radius:    20px;
+  border-radius:    15px;
   font-family:      $body-fonts;
   font-size:        2em;
   margin-bottom:    1em;
@@ -10,7 +10,7 @@ button {
   color:            $font-color;
   outline:          none;
   cursor:           pointer;
-  @include          user-select(none);
+  user-select:      none;
 }
 
 button:hover {

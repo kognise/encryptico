@@ -6,11 +6,18 @@ import nl2br   from 'npm:nl2br'   ;
 import NodeRSA from 'npm:node-rsa';
 
 export default Controller.extend({
-  loaderHidden:  true,
+  color:        '',
+  loaderHidden: true,
   actions: {
-    success: function() {},
-    error:   function() {},
-    go:      function() {
+    copied: function() {
+      this.set('color', 'green');
+      setTimeout(function(self) { self.set('color', '') }, 1000, this);
+    },
+    copyError: function() {
+      this.set('color', 'red');
+      setTimeout(function(self) { self.set('color', '') }, 1000, this);
+    },
+    go:     function() {
       var pair = keypair();
       this.set('_key', pair.public);
       this.set('key' , new htmlSafe(nl2br(pair.public)));

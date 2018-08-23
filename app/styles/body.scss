@@ -4,6 +4,7 @@ body {
   font-family: $body-fonts;
   color:       $font-color;
   text-align:  center;
+  transition:  background 0.5s;
 
   h1:first-of-type {
     margin-top: 0;
