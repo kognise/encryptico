@@ -14,11 +14,9 @@ module('Integration | Component | spinning-loader', function(hooks) {
 
     assert.equal(this.element.textContent.trim(), '');
 
-    // Template block usage:
+    // Dummy test:
     await render(hbs`
-      {{#spinning-loader}}
-        template block text
-      {{/spinning-loader}}
+      template block text
     `);
 
     assert.equal(this.element.textContent.trim(), 'template block text');

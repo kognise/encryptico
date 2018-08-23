@@ -14,11 +14,9 @@ module('Integration | Component | custom-button', function(hooks) {
 
     assert.equal(this.element.textContent.trim(), '');
 
-    // Template block usage:
+    // Dummy test:
     await render(hbs`
-      {{#custom-button}}
-        template block text
-      {{/custom-button}}
+      template block text
     `);
 
     assert.equal(this.element.textContent.trim(), 'template block text');

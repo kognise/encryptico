@@ -8,8 +8,18 @@ $secondary:  #00d4ff;
 $darker:     #00aacc;
 $font-color: #000000;
 
-@import 'body';
+@mixin user-select($property) {
+  -webkit-touch-callout: $property;
+    -webkit-user-select: $property;
+     -khtml-user-select: $property;
+       -moz-user-select: $property;
+        -ms-user-select: $property;
+            user-select: $property;
+}
+
+@import 'body'   ;
 @import 'headers';
 @import 'buttons';
-@import 'form';
-@import 'other';
+@import 'form'   ;
+@import 'loader' ;
+@import 'output' ;

@@ -2,13 +2,15 @@ button {
   transition:       background 0.5s;
   background:       none;
   border:           none;
-  border-radius:    20px;
+  border-radius:    15px;
   font-family:      $body-fonts;
   font-size:        2em;
   margin-bottom:    1em;
   padding:          30px 100px;
   color:            $font-color;
   outline:          none;
+  cursor:           pointer;
+  user-select:      none;
 }
 
 button:hover {
