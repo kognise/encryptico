@@ -19,17 +19,18 @@ export default Controller.extend({
       setTimeout(function(self) { self.set('color', '') }, 1000, this);
     },
     go: function() {
+      this.set('outputClass', '');
       var pair = keypair();
-      this.set('_key', pair.public);
-      this.set('key' , new htmlSafe(nl2br(pair.public)));
+      //this.set('_key', pair.private);
+      //this.set('key' , new htmlSafe(nl2br(pair.private)));
 
       var key = new NodeRSA();
-      key.importKey(pair.private, 'private');
+      key.importKey(pair.public, 'public');
 
-      var encryptedString = key.encrypt(this.get('string'), 'base64');
-      this.set('output', encryptedString);
+      //var encryptedString = key.encrypt(this.get('string'), 'base64');
+      //this.set('output', encryptedString);
 
-      this.set('outputClass', '');
+      //this.set('outputClass', '');
     }
   }
 });

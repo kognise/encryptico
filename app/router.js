@@ -8,7 +8,10 @@ const Router = EmberRouter.extend({
 
 Router.map(function() {
   this.route('main');
-  this.route('decrypt');
+  this.route('decrypt', function() {
+    this.route('public');
+    this.route('private');
+  });
   this.route('encrypt', function() {
     this.route('public');
     this.route('private');

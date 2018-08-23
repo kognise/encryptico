@@ -47,7 +47,7 @@
     "keypair": "^1.0.1",
     "loader.js": "^4.2.3",
     "nl2br": "0.0.3",
-    "node-rsa": "^1.0.1",
+    "node-forge": "^0.7.6",
     "qunit-dom": "^0.7.1"
   },
   "engines": {
