@@ -1,0 +1,14 @@
+{{textarea value=string placeholder="Text to encrypt"}}
+<br/>
+{{input type="text" value=pass placeholder="Passphrase"}}
+<br/>
+<button {{action 'go'}}>Go!</button>
+
+<br/>
+
+{{output}}
+<br/>
+<br/>
+{{key}}
+
+{{spinning-loader hidden=loader}}

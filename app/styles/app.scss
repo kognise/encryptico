@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Oswald');
+
+$body-fonts:   'Lato',   sans-serif;
+$header-fonts: 'Oswald', sans-serif;
+
+$primary:    #00ffcc;
+$secondary:  #00d4ff;
+$darker:     #00aacc;
+$font-color: #000000;
+
+@import 'body';
+@import 'headers';
+@import 'buttons';
+@import 'form';
+@import 'other';
