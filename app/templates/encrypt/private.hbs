@@ -1,18 +1,19 @@
 {{textarea value=string placeholder="Text to encrypt"}}
 <br/>
-{{input type="text" value=pass placeholder="Passphrase"}}
-<br/>
 <button {{action 'go'}}>Go!</button>
 
 <br/>
-
-{{{output}}}
+Output:
 <br/>
+{{output}}
+<br/>
+
 <br/>
 Public key:
 <br/>
-{{{key}}}
+{{key}}
 <br/>
+<!--
 {{#copy-button
   clipboardText=_key
   success=(action 'success')
@@ -20,5 +21,6 @@ Public key:
 }}
   Click To Copy
 {{/copy-button}}
+-->
 
 {{spinning-loader hidden=loaderHidden}}
