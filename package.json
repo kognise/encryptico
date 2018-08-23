@@ -18,12 +18,12 @@
   },
   "devDependencies": {
     "broccoli-asset-rev": "^3.0.0",
-    "cryptico": "^1.0.2",
     "ember-ajax": "^3.0.0",
     "ember-browserify": "^1.2.2",
     "ember-cli": "~3.3.0",
     "ember-cli-app-version": "^3.0.0",
     "ember-cli-babel": "^6.6.0",
+    "ember-cli-clipboard": "^0.9.0",
     "ember-cli-dependency-checker": "^3.0.0",
     "ember-cli-eslint": "^4.2.1",
     "ember-cli-htmlbars": "^3.0.0",
@@ -43,7 +43,9 @@
     "ember-source": "~3.3.0",
     "ember-welcome-page": "^3.0.0",
     "eslint-plugin-ember": "^5.0.0",
+    "keypair": "^1.0.1",
     "loader.js": "^4.2.3",
+    "node-rsa": "^1.0.1",
     "qunit-dom": "^0.7.1"
   },
   "engines": {

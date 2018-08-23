@@ -6,9 +6,19 @@
 
 <br/>
 
-{{output}}
+{{{output}}}
 <br/>
 <br/>
-{{key}}
+Public key:
+<br/>
+{{{key}}}
+<br/>
+{{#copy-button
+  clipboardText=_key
+  success=(action 'success')
+  error=(action 'error')
+}}
+  Click To Copy
+{{/copy-button}}
 
-{{spinning-loader hidden=loader}}
+{{spinning-loader hidden=loaderHidden}}
