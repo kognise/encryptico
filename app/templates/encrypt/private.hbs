@@ -2,7 +2,7 @@
 <br/>
 <button {{action 'go'}}>Go!</button>
 
-<div class='output {{color}}'>
+<div class='output {{color}} {{outputClass}}'>
   {{#copy-button clipboardText=output success=(action 'copied') error=(action 'copyError')}}
     <b>Output:</b>
     <br/>

@@ -23,13 +23,13 @@ export default Controller.extend({
 
       setTimeout(function(self) {
         var kp = keypair();
-        var priv = new rsa();
-        priv.importKey(kp.private, 'pkcs1-private-pem');
+        var pub = new rsa();
+        pub.importKey(kp.public, 'pkcs1-public-pem');
 
-        self.set('_key', kp.public);
-        self.set('key' , new htmlSafe(nl2br(kp.public)));
+        self.set('_key', kp.private);
+        self.set('key' , new htmlSafe(nl2br(kp.private)));
 
-        var encrypted = priv.encryptPrivate(self.get('string'), 'base64');
+        var encrypted = pub.encrypt(self.get('string'), 'base64');
         self.set('output', encrypted);
 
         self.set('outputClass', '');
