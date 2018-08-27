@@ -1,9 +1,9 @@
 import Controller   from '@ember/controller';
 import { htmlSafe } from '@ember/template'  ;
 
-import keypair from 'npm:keypair' ;
-import nl2br   from 'npm:nl2br'   ;
-import NodeRSA from 'npm:node-rsa';
+import keypair from 'npm:keypair'   ;
+import nl2br   from 'npm:nl2br'     ;
+import forge   from 'npm:node-forge';
 
 export default Controller.extend({
   color:        '',
