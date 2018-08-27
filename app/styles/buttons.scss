@@ -1,5 +1,5 @@
 button {
-  transition:       background 0.5s, filter 0.5s;
+  transition:       background $buttonTransitionSpeed, filter $buttonTransitionSpeed;
   background:       none;
   border:           none;
   border-radius:    15px;
@@ -11,12 +11,13 @@ button {
   outline:          none;
   cursor:           pointer;
   user-select:      none;
+  width:            $buttonWidth;
 }
 
 button:hover {
-  background: $secondary;
+  background: $buttonHoverColor;
 }
 
 button:active {
- filter: brightness(0.8);
+ filter: brightness($buttonDarknessChange);
 }
