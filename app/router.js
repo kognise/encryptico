@@ -16,6 +16,8 @@ Router.map(function() {
     this.route('public');
     this.route('private');
   });
+  this.route('sign');
+  this.route('verify');
 });
 
 export default Router;
