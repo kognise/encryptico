@@ -1,5 +1,5 @@
 button {
-  transition:       background 0.5s;
+  transition:       background 0.5s, filter 0.5s;
   background:       none;
   border:           none;
   border-radius:    15px;
@@ -18,5 +18,5 @@ button:hover {
 }
 
 button:active {
- background: $darker;
+ filter: brightness(0.8);
 }
