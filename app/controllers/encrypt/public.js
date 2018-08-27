@@ -1,9 +1,9 @@
 import Controller   from '@ember/controller';
 import { htmlSafe } from '@ember/template'  ;
 
-import keypair from 'npm:keypair'   ;
-import nl2br   from 'npm:nl2br'     ;
-import forge   from 'npm:node-forge';
+import keypair from 'npm:keypair' ;
+import nl2br   from 'npm:nl2br'   ;
+import rsa     from 'npm:node-rsa';
 
 export default Controller.extend({
   color:        '',
@@ -19,18 +19,22 @@ export default Controller.extend({
       setTimeout(function(self) { self.set('color', '') }, 1000, this);
     },
     go: function() {
-      this.set('outputClass', '');
-      var pair = keypair();
-      //this.set('_key', pair.private);
-      //this.set('key' , new htmlSafe(nl2br(pair.private)));
+      this.set('loaderHidden', false);
 
-      var key = new NodeRSA();
-      key.importKey(pair.public, 'public');
+      setTimeout(function(self) {
+        var kp = keypair();
+        var pub = new rsa();
+        pub.importKey(kp.public, 'pkcs1-public-pem');
 
-      //var encryptedString = key.encrypt(this.get('string'), 'base64');
-      //this.set('output', encryptedString);
+        self.set('_key', kp.private);
+        self.set('key' , new htmlSafe(nl2br(kp.private)));
 
-      //this.set('outputClass', '');
+        var encrypted = pub.encrypt(self.get('string'), 'base64');
+        self.set('output', encrypted);
+
+        self.set('outputClass', '');
+        self.set('loaderHidden', true);
+      }, 50, this);
     }
   }
 });
