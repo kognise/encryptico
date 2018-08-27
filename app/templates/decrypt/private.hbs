@@ -1,1 +1,14 @@
-{{outlet}}
+{{textarea value=string placeholder="String to decrypt"}}
+{{textarea value=key    placeholder="Private key"      }}
+<br/>
+<button {{action 'go'}}>Go!</button>
+
+<div class='output {{color}} {{outputClass}}'>
+  {{#copy-button clipboardText=_output success=(action 'copied') error=(action 'copyError')}}
+    <b>Output:</b>
+    <br/>
+    {{output}}
+  {{/copy-button}}
+</div>
+
+{{spinning-loader hidden=loaderHidden}}
