@@ -5,13 +5,14 @@ button {
   border-radius:    15px;
   font-family:      $body-fonts;
   font-size:        2em;
+  margin:           auto;
   margin-bottom:    1em;
   padding:          30px 100px;
   color:            $font-color;
   outline:          none;
   cursor:           pointer;
   user-select:      none;
-  width:            $buttonWidth;
+  width:            35%;
 }
 
 button:hover {

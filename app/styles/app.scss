@@ -3,14 +3,14 @@
 $body-fonts:   'Lato',   sans-serif;
 $header-fonts: 'Oswald', sans-serif;
 
-$primary:    #434343;
-$secondary:  #000000;
-$font-color: #ffffff;
+$primary:           #434343;
+$secondary:         #000000;
+$font-color:        #ffffff;
+$invert-font-color: #000000;
 
 $buttonHoverColor     : $primary;
 $buttonTransitionSpeed: 150ms;
 $buttonDarknessChange : 0.8;
-$buttonWidth          : 30%;
 
 @import 'body'   ;
 @import 'headers';
