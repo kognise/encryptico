@@ -1,9 +1,9 @@
-{{textarea value=string placeholder="Text to sign"}}
+{{textarea value=_string placeholder="Text to sign"}}
 <br/>
 <button {{action 'go'}}>Go!</button>
 
 <div class='output {{color}} {{outputClass}}'>
-  {{#copy-button clipboardText=string    success=(action 'copied') error=(action 'copyError')}}
+  {{#copy-button clipboardText=_string   success=(action 'copied') error=(action 'copyError')}}
     <b>Original text:</b>
     <br/>
     {{string}}

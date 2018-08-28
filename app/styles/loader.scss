@@ -62,9 +62,8 @@
 
 .loader-container {
   z-index: 99999999999;
-  opacity: 1;
 }
 
-.loader-container .hidden {
-  opacity: 0;
+.loader-container.hidden {
+  display: none;
 }

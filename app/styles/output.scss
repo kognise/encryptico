@@ -38,6 +38,11 @@
     padding-bottom: 15px;
     border-radius:  0 0 15px 15px;
   }
+  .copy-btn:first-of-type:last-of-type {
+    padding-top:    15px;
+    padding-bottom: 15px;
+    border-radius:  15px 15px 15px 15px;
+  }
 }
 
 .output.green {

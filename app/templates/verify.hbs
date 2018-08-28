@@ -5,22 +5,10 @@
 <button {{action 'go'}}>Go!</button>
 
 <div class='output {{color}} {{outputClass}}'>
-  {{#copy-button clipboardText=string success=(action 'copied') error=(action 'copyError')}}
-    <b>Original text:</b>
+  {{#copy-button clipboardText=succeeded success=(action 'copied') error=(action 'copyError')}}
+    <b>Succeeded:</b>
     <br/>
-    {{string}}
-  {{/copy-button}}
-
-  {{#copy-button clipboardText=signature success=(action 'copied') error=(action 'copyError')}}
-    <b>Signature:</b>
-    <br/>
-    {{signature}}
-  {{/copy-button}}
-
-  {{#copy-button clipboardText=_key   success=(action 'copied') error=(action 'copyError')}}
-    <b>Public key:</b>
-    <br/>
-    {{key}}
+    {{succeeded}}
   {{/copy-button}}
 </div>
 

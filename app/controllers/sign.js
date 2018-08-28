@@ -22,6 +22,8 @@ export default Controller.extend({
       this.set('loaderHidden', false);
 
       setTimeout(function(self) {
+        self.set('string', new htmlSafe(nl2br(self.get('_string'))));
+
         var kp = keypair();
         var priv = new rsa();
         priv.importKey(kp.private, 'pkcs1-private-pem');
@@ -29,7 +31,7 @@ export default Controller.extend({
         self.set('_key', kp.public);
         self.set('key' , new htmlSafe(nl2br(kp.public)));
 
-        var signature = priv.sign(self.get('string'), 'base64');
+        var signature = priv.sign(self.get('_string'), 'base64', 'utf8');
         self.set('signature', signature);
 
         self.set('outputClass', '');
