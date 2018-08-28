@@ -3,7 +3,6 @@ import { htmlSafe } from '@ember/template'  ;
 
 import keypair from 'npm:keypair' ;
 import nl2br   from 'npm:nl2br'   ;
-import rsa     from 'npm:node-rsa';
 
 export default Controller.extend({
   color:        '',
