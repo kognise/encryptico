@@ -1,22 +1,24 @@
 button {
-  transition:       background 0.5s;
+  transition:       background $buttonTransitionSpeed, filter $buttonTransitionSpeed;
   background:       none;
   border:           none;
   border-radius:    15px;
   font-family:      $body-fonts;
   font-size:        2em;
+  margin:           auto;
   margin-bottom:    1em;
   padding:          30px 100px;
   color:            $font-color;
   outline:          none;
   cursor:           pointer;
   user-select:      none;
+  width:            35%;
 }
 
 button:hover {
-  background: $secondary;
+  background: $buttonHoverColor;
 }
 
 button:active {
- background: $darker;
+ filter: brightness($buttonDarknessChange);
 }

@@ -1,4 +1,4 @@
-import Controller   from '@ember/controller';
+import  Controller  from '@ember/controller';
 import { htmlSafe } from '@ember/template'  ;
 
 import nl2br from 'npm:nl2br'   ;

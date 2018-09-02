@@ -1,1 +1,15 @@
-{{outlet}}
+{{textarea value=string    placeholder="Original text" }}
+{{textarea value=signature placeholder="Signature"     }}
+{{textarea value=key       placeholder="Public key"    }}
+<br/>
+<button {{action 'go'}}>Go!</button>
+
+<div class='output {{color}} {{outputClass}}'>
+  {{#copy-button clipboardText=succeeded success=(action 'copied') error=(action 'copyError')}}
+    <b>Succeeded:</b>
+    <br/>
+    {{succeeded}}
+  {{/copy-button}}
+</div>
+
+{{spinning-loader hidden=loaderHidden}}

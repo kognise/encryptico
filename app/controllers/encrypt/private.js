@@ -1,4 +1,4 @@
-import Controller   from '@ember/controller';
+import  Controller  from '@ember/controller';
 import { htmlSafe } from '@ember/template'  ;
 
 import keypair from 'npm:keypair' ;

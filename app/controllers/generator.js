@@ -1,8 +1,8 @@
 import  Controller  from '@ember/controller';
 import { htmlSafe } from '@ember/template'  ;
 
-import nl2br from 'npm:nl2br'   ;
-import rsa   from 'npm:node-rsa';
+import keypair from 'npm:keypair' ;
+import nl2br   from 'npm:nl2br'   ;
 
 export default Controller.extend({
   color:        '',
@@ -21,12 +21,11 @@ export default Controller.extend({
       this.set('loaderHidden', false);
 
       setTimeout(function(self) {
-        var priv = new rsa();
-        priv.importKey(self.get('key'), 'pkcs1-private-pem');
-
-        var decrypted = priv.decrypt(self.get('string'));
-        self.set('_output', decrypted);
-        self.set('output', new htmlSafe(nl2br(decrypted)));
+        var kp = keypair();
+        self.set('_public', kp.public);
+        self.set('public', new htmlSafe(nl2br(kp.public)));
+        self.set('_private', kp.private);
+        self.set('private', new htmlSafe(nl2br(kp.private)));
 
         self.set('outputClass', '');
         self.set('loaderHidden', true);

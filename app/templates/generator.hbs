@@ -1,0 +1,17 @@
+<button {{action 'go'}}>Go!</button>
+
+<div class='output {{color}} {{outputClass}}'>
+  {{#copy-button clipboardText=_public  success=(action 'copied') error=(action 'copyError')}}
+    <b>Public key:</b>
+    <br/>
+    {{public}}
+  {{/copy-button}}
+
+  {{#copy-button clipboardText=_private success=(action 'copied') error=(action 'copyError')}}
+    <b>Private key:</b>
+    <br/>
+    {{private}}
+  {{/copy-button}}
+</div>
+
+{{spinning-loader hidden=loaderHidden}}
