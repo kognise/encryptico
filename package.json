@@ -1,7 +1,7 @@
 {
   "name": "encryptico",
   "version": "1.0.0",
-  "private": true,
+  "private": false,
   "description": "Easy-peasy encryption, decryption, and signing using a simple, beautiful web interface and top-of-the-line cryptography techniques.",
   "license": "MIT",
   "author": "Felix Mattick",
