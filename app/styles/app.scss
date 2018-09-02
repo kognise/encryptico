@@ -1,21 +1,16 @@
-@import url('https://fonts.googleapis.com/css?family=Lato|Oswald');
+@import url('https://fonts.googleapis.com/css?family=Lato|Oswald:700');
 
-$body-fonts:   'Lato',   sans-serif;
-$header-fonts: 'Oswald', sans-serif;
+$body-fonts:   'Lato',   'Calibri', sans-serif;
+$header-fonts: 'Oswald', 'Impact',  sans-serif;
 
-$primary:    #00ffcc;
-$secondary:  #00d4ff;
-$darker:     #00aacc;
-$font-color: #000000;
+$primary:           #434343;
+$secondary:         #000000;
+$font-color:        #ffffff;
+$invert-font-color: #000000;
 
-@mixin user-select($property) {
-  -webkit-touch-callout: $property;
-    -webkit-user-select: $property;
-     -khtml-user-select: $property;
-       -moz-user-select: $property;
-        -ms-user-select: $property;
-            user-select: $property;
-}
+$buttonHoverColor     : $primary;
+$buttonTransitionSpeed: 150ms;
+$buttonDarknessChange : 0.8;
 
 @import 'body'   ;
 @import 'headers';

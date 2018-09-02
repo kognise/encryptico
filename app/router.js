@@ -18,6 +18,7 @@ Router.map(function() {
   });
   this.route('sign');
   this.route('verify');
+  this.route('generator');
 });
 
 export default Router;
