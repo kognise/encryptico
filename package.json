@@ -12,7 +12,7 @@
   "repository": "https://github.com/arch-lord/encryptico",
   "scripts": {
     "build": "ember build",
-    "lintjs": "eslint .",
+    "lint:js": "eslint .",
     "start": "ember serve",
     "test": "ember test"
   },
