@@ -21,8 +21,8 @@ You will need the following things properly installed on your computer.
 ## Running / Development
 
 * `npm start`
-* Visit the app at [localhost:4200](http://localhost:4200).
-* Visit the tests at [localhost:4200/tests](http://localhost:4200/tests).
+* Visit the app at [localhost:4200](http://localhost:4200)
+* Visit the tests at [localhost:4200/tests](http://localhost:4200/tests)
 
 ### Running Tests
 
@@ -38,3 +38,23 @@ You will need the following things properly installed on your computer.
 
 * `ember build` (development)
 * `ember build --environment production` (production)
+
+## Electron
+
+Encryptico supports building a standalone application using Electron and a wonderful package called `ember-electron`.
+
+### Running / Development
+
+* It's very simple. Just run...
+* `ember electron`
+* ...and the app will start!
+
+### Running Tests
+
+* `ember electron:test`
+* `ember electron:test --server` (for live reloading)
+
+### Building
+
+* `ember electron:package`
+* Output will be in the `electron-out` folder
