@@ -31,14 +31,10 @@ You will need the following things properly installed on your computer.
 
 ### Linting
 
-* `npm run lint:js`
-* `npm run lint:js -- --fix`
+* `npm run lintjs`
+* `npm run lintjs -- --fix`
 
 ### Building
 
 * `ember build` (development)
 * `ember build --environment production` (production)
-
-### Deploying
-
-We're working on an easy way to deploy it.
