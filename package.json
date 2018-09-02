@@ -9,7 +9,7 @@
     "doc": "doc",
     "test": "tests"
   },
-  "repository": "",
+  "repository": "https://github.com/arch-lord/encryptico",
   "scripts": {
     "build": "ember build",
     "lintjs": "eslint .",
