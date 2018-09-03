@@ -3,6 +3,7 @@
 # compiled output
 /dist/
 /tmp/
+/electron-out/
 
 # dependencies
 /bower_components/
@@ -11,12 +12,12 @@
 # misc
 /.sass-cache
 /connect.lock
-/coverage/
+/coverage/w
 /libpeerconnection.log
 /npm-debug.log*
 /testem.log
 /yarn-error.log
-/scrappy.js
+/scrappy.*
 
 # ember-try
 /.node_modules.ember-try/

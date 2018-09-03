@@ -14,3 +14,7 @@
 
 # ember-try
 /.node_modules.ember-try/
+
+# ember-electron
+/ember-electron/
+/electron-out/

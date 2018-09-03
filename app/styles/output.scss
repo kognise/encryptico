@@ -20,6 +20,7 @@
     cursor:        pointer;
     box-sizing:    inherit;
     width:         100%;
+    color:         $invert-font-color;
   }
 
   .copy-btn:hover  {
@@ -36,6 +37,11 @@
   .copy-btn:last-of-type {
     padding-bottom: 15px;
     border-radius:  0 0 15px 15px;
+  }
+  .copy-btn:first-of-type:last-of-type {
+    padding-top:    15px;
+    padding-bottom: 15px;
+    border-radius:  15px 15px 15px 15px;
   }
 }
 
