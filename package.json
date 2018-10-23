@@ -24,7 +24,7 @@
     "devtron": "^1.4.0",
     "electron-forge": "^5.2.2",
     "electron-prebuilt-compile": "3.0.2",
-    "ember-ajax": "^3.0.0",
+    "ember-ajax": "3.1.2",
     "ember-browserify": "^1.2.2",
     "ember-cli": "~3.3.0",
     "ember-cli-app-version": "^3.0.0",
