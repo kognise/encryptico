@@ -4,12 +4,12 @@
   "private": false,
   "description": "Easy-peasy encryption, decryption, and signing using a simple, beautiful web interface and top-of-the-line cryptography techniques.",
   "license": "MIT",
-  "author": "Felix Mattick",
+  "author": "Kognise",
   "directories": {
     "doc": "doc",
     "test": "tests"
   },
-  "repository": "https://github.com/arch-lord/encryptico",
+  "repository": "https://github.com/kognise/encryptico",
   "scripts": {
     "build": "ember build",
     "lint:js": "eslint .",
