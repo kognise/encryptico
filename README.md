@@ -1,8 +1,8 @@
 # Encryptico
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/arch-lord/encryptico.svg)](https://greenkeeper.io/)
-[![Build Status](https://travis-ci.org/arch-lord/encryptico.svg?branch=master)](https://travis-ci.org/arch-lord/encryptico)
-[![Current Version](https://img.shields.io/badge/version-1.0.0-brightgreen.svg)](https://github.com/arch-lord/encryptico)
+[![Greenkeeper badge](https://badges.greenkeeper.io/kognise/encryptico.svg)](https://greenkeeper.io/)
+[![Build Status](https://travis-ci.org/kognise/encryptico.svg?branch=master)](https://travis-ci.org/kognise/encryptico)
+[![Current Version](https://img.shields.io/badge/version-1.0.0-brightgreen.svg)](https://github.com/kognise/encryptico)
 
 Easy-peasy encryption, decryption, and signing using a simple, beautiful web interface and top-of-the-line cryptography techniques.
 
@@ -29,7 +29,7 @@ You will need the following things properly installed on your computer.
 ## Installation
 
 * `npm install -g ember-cli`
-* `git clone https://github.com/arch-lord/encryptico.git`
+* `git clone https://github.com/kognise/encryptico.git`
 * `cd encryptico`
 * `npm install`
 
