@@ -10,14 +10,14 @@ module.exports = {
     "name": "Encryptico",
     "overwrite": true,
     "versionString": {
-      "CompanyName": "Felix Mattick",
+      "CompanyName": "Kognise",
       "FileDescription": "Encryptico Desktop",
       "ProductName": "Encryptico",
       "InternalName": "Encryptico"
     }
   },
   "electronWinstallerConfig": {
-    "authors": "Felix Mattick",
+    "authors": "Kognise",
     "exe": "Encryptico.exe",
     "icon": "public/favicon",
     "name": "Encryptico",
@@ -27,7 +27,7 @@ module.exports = {
     "title": "Encryptico"
   },
   "github_repository": {
-    "owner": "arch-lord",
+    "owner": "kognise",
     "name": "encryptico"
   }
 };
