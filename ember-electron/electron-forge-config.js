@@ -5,7 +5,7 @@ module.exports = {
     "win32": ["squirrel", "zip"]
   },
   "electronPackagerConfig": {
-    "appCopyright": "Copyright (c) 2018 Felix Mattick",
+    "appCopyright": "Copyright (c) 2018 Kognise",
     "icon": "public/favicon",
     "name": "Encryptico",
     "overwrite": true,
