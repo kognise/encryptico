@@ -6,6 +6,8 @@
 
 Easy-peasy encryption, decryption, and signing using a simple, beautiful web interface and top-of-the-line cryptography techniques.
 
+**Although this is a fun project and it still works, I am not maintaining this any more and probably won't respond to any issues or pull requests. Feel free to steal any of the code.**
+
 ## Table of Contents
 
 * [Prerequisites](#prerequisites)
