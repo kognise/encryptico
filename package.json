@@ -54,7 +54,7 @@
     "loader.js": "^4.2.3",
     "nl2br": "0.0.3",
     "node-rsa": "^1.0.1",
-    "qunit-dom": "^0.8.0",
+    "qunit-dom": "^0.9.2",
     "sass": "^1.13.1"
   },
   "engines": {
