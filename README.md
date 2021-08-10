@@ -1,3 +1,9 @@
+> 🚩 **This project is archived!** 🚩
+> 
+> *I did this when I was 12, and didn't really understand how assymetric encryption actually works. As such, it isn't very helpful to say the least. But it was the first utility website I really tried to develop.*
+> 
+> *Also, does anyone know why there's a packaged executable of HospitalRun in the public folder?*
+
 # Encryptico
 
 [![Greenkeeper badge](https://badges.greenkeeper.io/kognise/encryptico.svg)](https://greenkeeper.io/)
